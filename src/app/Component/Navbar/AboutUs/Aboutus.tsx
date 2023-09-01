@@ -28,7 +28,7 @@ export default function AboutUs () {
                     <div className="mt-[90px] ml-10 flex flex-col gap-[50px]">
                         {
                             data.map((element,idx)=> {
-                                return <div className="flex flex-row items-center gap-[24px]">
+                                return <div key={idx} className="flex flex-row items-center gap-[24px]">
                                 <div className="w-[80px] h-[80px] bg-[#404040] rounded-full flex flex-row items-center justify-center">
                                         <Image alt = "" src = {element.img} width = {40} height = {40}/>
                                 </div>

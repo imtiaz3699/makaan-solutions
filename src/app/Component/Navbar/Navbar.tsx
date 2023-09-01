@@ -28,7 +28,7 @@ export default function Navbar () {
         <div className="w-[1070px] h-[58px] flex flex-row items-center justify-center gap-[40px] bg-black rounded-[20px]">
                 {
                     navData.map((element,idx)=> {
-                        return <div className="cursor-pointer hover:text-blue-500">{element.name}</div>
+                        return <div key={idx} className="cursor-pointer hover:text-blue-500">{element.name}</div>
                     })
                 }
         </div>

@@ -87,7 +87,7 @@ export const OurStory = () => {
                         <div className="flex flex-col gap-[20px] ">
                         {
                             sliderData.map((element,idx)=> {
-                                return <div className="text-gray-500 hover:text-white transform hover:translate-x-5 hover:-translate-y-2 duration-500 hover:text-white cursor-pointer">{element.name}</div>
+                                return <div key = {idx} className="text-gray-500 hover:text-white transform hover:translate-x-5 hover:-translate-y-2 duration-500 hover:text-white cursor-pointer">{element.name}</div>
                             })
                         }
                         </div>
@@ -103,7 +103,7 @@ export const OurStory = () => {
       >
        {
            secondSliderData.map((element,idx)=> {
-            return <SwiperSlide className="h-[450px]">
+            return <SwiperSlide className="h-[450px]" key={idx}>
                 {/* <div className="flex flex-col gap-[20px]"> */}
             <div className="w-[266px] h-[364px]">
             <div className="bg-white relative rounded-xl  w-[266px] h-[255px] hover:h-[364px] transform ease-out duration-500"> 
