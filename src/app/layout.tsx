@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='grid place-items-center'>
+    <html lang="en" className='grid place-items-center' style={{backgroundColor:'black'}}>
       <body className={inter.className} style={{backgroundColor:'black'}}>{children}</body>
     </html>
   )
